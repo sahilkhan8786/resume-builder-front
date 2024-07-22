@@ -3,27 +3,6 @@
 @tailwind utilities;
 
 
-@media print {
-  #no-print {
-    display: none;
-  }
-
-  #print-area {
-    display: block;
-  }
-
-  body {
-    margin: 0;
-    padding: 0;
-    box-shadow: none;
-  }
-}
-
-@page {
-  size: auto;
-  margin: 0mm;
-}
-
 
 
 @layer base {
@@ -81,6 +60,27 @@
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
+}
+
+@media print {
+  #no-print {
+    display: none;
+  }
+
+  #print-area {
+    display: block;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+  }
+}
+
+@page {
+  size: auto;
+  margin: 0mm;
 }
 
 @layer base {

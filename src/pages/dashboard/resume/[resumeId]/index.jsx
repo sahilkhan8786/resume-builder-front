@@ -6,7 +6,6 @@ import { ResumeInfoContext } from '@/context/ResumeInfoContext';
 import dummy from '../../data/dummy';
 
 export default function EditResume() {
-    const params = useParams();
     const [resumeInfo, setResumeInfo] = useState();
 
     useState(() => {

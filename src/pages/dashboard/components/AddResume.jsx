@@ -6,8 +6,7 @@ import {
     DialogContent,
     DialogDescription,
     DialogHeader,
-    DialogTitle,
-    DialogTrigger,
+    DialogTitle
 } from "@/components/ui/dialog"
 import { Button } from '@/components/ui/button'
 import { Link } from 'react-router-dom'
@@ -18,10 +17,11 @@ export default function AddResume() {
     return (
         <div >
             <div className='p-14 py-24 border flex items-center justify-center bg-secondary rounded-lg h-[280px] 
-            hover:scale-105 hover:shadow-md transition-all cursor-pointer border-dashed'
+            hover:scale-105 hover:shadow-md transition-all cursor-pointer border-dashed  flex-col gap-2'
                 onClick={() => setOpenDialog(true)}
             >
                 <PlusSquare />
+                <h2 className='text-center mt-1'>Add Resume</h2>
             </div>
             <Dialog open={openDialog} >
                 <DialogContent>

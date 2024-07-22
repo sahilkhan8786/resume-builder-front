@@ -9,8 +9,8 @@ function Home() {
         <div>
             <Header />
             <div>
-                {/* <img src={'/grid.svg'} className="absolute z-[-10] w-full" 
-      width={1200} height={300} /> */}
+                {/* <img src={'/grid.svg'} className="absolute z-[-10] w-full"
+                    width={1200} height={300} /> */}
                 {/* <Header/> */}
                 <section className=" z-50">
                     <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">

@@ -58,4 +58,4 @@ function ViewResume() {
     )
 }
 
-export default ViewResume
+export default ViewResume;
