@@ -55,8 +55,9 @@ function Skills() {
 
             <div>
                 {skillsList.map((item, index) => (
-                    <div className='flex justify-between mb-2 border rounded-lg p-3 '>
-                        <div>
+                    <div className='flex justify-between mb-2 border rounded-lg p-3 flex-col sm:flex-row gap-2
+                    '>
+                        <div className='flex flex-col'>
                             <label className='text-xs'>Name</label>
                             <Input className="w-full"
                                 defaultValue={item.name}
@@ -68,8 +69,8 @@ function Skills() {
                     </div>
                 ))}
             </div>
-            <div className='flex justify-between'>
-                <div className='flex gap-2'>
+            <div className='flex justify-between flex-col mt-4 gap-2'>
+                <div className='flex gap-2 flex-col md:flex-row '>
                     <Button variant="outline" onClick={AddNewSkills} className="text-primary"> + Add More Skill</Button>
                     <Button variant="outline" onClick={RemoveSkills} className="text-primary"> - Remove</Button>
 

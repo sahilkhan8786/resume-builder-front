@@ -32,7 +32,7 @@ function PersonalDetail({ enabledNext }) {
             <p>Get Started with the basic information</p>
 
             <form >
-                <div className='grid grid-cols-2 mt-5 gap-3'>
+                <div className='md:grid md:grid-cols-2 mt-5 gap-3'>
                     <div>
                         <label className='text-sm'>First Name</label>
                         <Input name="firstName" defaultValue={resumeInfo?.firstName} required onChange={handleInputChange} />

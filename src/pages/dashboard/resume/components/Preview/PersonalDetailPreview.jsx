@@ -2,7 +2,7 @@ import React from 'react'
 
 function PersonalDetailPreview({ resumeInfo }) {
     return (
-        <div>
+        <div >
             <h2 className='font-bold text-xl text-center'
                 style={{
                     color: resumeInfo?.themeColor
@@ -16,7 +16,7 @@ function PersonalDetailPreview({ resumeInfo }) {
                     color: resumeInfo?.themeColor
                 }}>{resumeInfo?.address}</h2>
 
-            <div className='flex justify-between'>
+            <div className='flex justify-between flex-col items-center xl:flex-row'>
                 <h2 className='font-normal text-xs'
                     style={{
                         color: resumeInfo?.themeColor

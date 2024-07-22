@@ -8,7 +8,7 @@ export default function Header() {
             <Link to='/'>
                 <img src='/logo.svg' width={100} height={100} />
             </Link>
-            <Link to={`/auth/sign-in`}>
+            <Link to={`/dashboard`}>
                 <Button>Get Started</Button>
             </Link>
         </div>

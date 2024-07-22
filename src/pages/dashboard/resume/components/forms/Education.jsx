@@ -64,16 +64,16 @@ function Education() {
 
             <div>
                 {educationalList.map((item, index) => (
-                    <div>
-                        <div className='grid grid-cols-2 gap-3 border p-3 my-5 rounded-lg'>
-                            <div className='col-span-2'>
+                    <div className='mt-5'>
+                        <div className='flex flex-col gap-2 '>
+                            <div className='flex flex-col'>
                                 <label>University Name</label>
                                 <Input name="universityName"
                                     onChange={(e) => handleChange(e, index)}
                                     defaultValue={item?.universityName}
                                 />
                             </div>
-                            <div>
+                            <div className='flex flex-col'>
                                 <label>Degree</label>
                                 <Input name="degree"
                                     onChange={(e) => handleChange(e, index)}
@@ -109,8 +109,8 @@ function Education() {
                     </div>
                 ))}
             </div>
-            <div className='flex justify-between'>
-                <div className='flex gap-2'>
+            <div className='flex justify-between flex-col gap-3 mt-6'>
+                <div className='flex gap-2 flex-col md:flex-row'>
                     <Button variant="outline" onClick={AddNewEducation} className="text-primary"> + Add More Education</Button>
                     <Button variant="outline" onClick={RemoveEducation} className="text-primary"> - Remove</Button>
 
