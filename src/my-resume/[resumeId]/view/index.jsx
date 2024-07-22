@@ -14,10 +14,16 @@ function ViewResume() {
 
     useEffect(() => {
         GetResumeInfo();
-    }, [])
-    const GetResumeInfo = () => {
-        setResumeInfo(dummy)
+    }, [resumeId]);
+    const GetResumeInfo = async () => {
+        try {
+            // Fetch data from API or other source
+            setResumeInfo(dummy);
+        } catch (error) {
+            console.error("Error fetching resume info:", error);
+        }
     }
+
 
     const HandleDownload = () => {
         window.print();
