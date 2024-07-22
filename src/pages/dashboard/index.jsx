@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import AddResume from './components/AddResume'
-import ResumeCardItem from './components/ResumeCardItem'
+import { useState } from "react"
+import AddResume from "./components/AddResume"
+import ResumeCardItem from "./components/ResumeCardItem"
 
 
 const DUMMY_RESUME = [{ title: 'first', id: 'r1' }, { title: 'Second', id: 'r2' }]

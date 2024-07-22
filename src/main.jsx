@@ -1,13 +1,13 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import SignInPage from './auth/sign-in/index.jsx'
-import Home from './pages/Home/index.jsx'
-import Dashboard from './pages/dashboard/index.jsx'
-import EditResume from './pages/dashboard/resume/resumeId/index.jsx'
-import ViewResume from './my-resume/resumeId/view/index.jsx'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App.jsx';
+import './index.css';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import SignInPage from './auth/sign-in/index.jsx';
+import Home from './pages/Home/index.jsx';
+import Dashboard from './pages/dashboard/index.jsx';
+import EditResume from './pages/dashboard/resume/resumeId/index.jsx';
+import ViewResume from './my-resume/resumeId/view/index.jsx';
 
 const router = createBrowserRouter([
   {
@@ -21,7 +21,6 @@ const router = createBrowserRouter([
         path: '/dashboard/resume/:resumeId/edit',
         element: <EditResume />
       },
-
     ]
   },
   {
@@ -36,10 +35,10 @@ const router = createBrowserRouter([
     path: '/my-resume/:resumeId/view',
     element: <ViewResume />
   },
-])
+]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router} />
   </React.StrictMode>,
-)
+);

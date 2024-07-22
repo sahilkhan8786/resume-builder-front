@@ -1,15 +1,12 @@
-import React, { useState } from 'react'
-import FormSection from '../components/FormSection';
-import ResumePreview from '../components/ResumePreview';
-import { ResumeInfoContext } from '@/context/ResumeInfoContext';
-import dummy from '../../data/dummy';
+import { ResumeInfoContext } from "@/context/ResumeInfoContext";
+import { useState } from "react";
+import FormSection from "../components/FormSection";
+import ResumePreview from "../components/ResumePreview";
+import dummy from "../../data/dummy";
+
 
 export default function EditResume() {
-    const [resumeInfo, setResumeInfo] = useState();
-
-    useState(() => {
-        setResumeInfo(dummy)
-    }, [])
+    const [resumeInfo, setResumeInfo] = useState(dummy)
     return (
         <ResumeInfoContext.Provider value={{ resumeInfo, setResumeInfo }}>
 
