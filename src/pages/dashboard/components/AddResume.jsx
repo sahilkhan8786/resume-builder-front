@@ -23,8 +23,9 @@ export default function AddResume() {
             >
                 <PlusSquare />
             </div>
-            <Dialog open={openDialog}>
+            <Dialog open={openDialog} >
                 <DialogContent>
+
                     <DialogHeader>
                         <DialogTitle>Create New Resume</DialogTitle>
                         <DialogDescription>

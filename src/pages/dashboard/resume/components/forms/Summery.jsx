@@ -34,6 +34,8 @@ function Summery({ enabledNext }) {
     // }
 
 
+
+
     return (
         <div>
             <div className='p-5 shadow-lg rounded-lg border-t-primary border-t-4 mt-10 '>
@@ -55,7 +57,7 @@ function Summery({ enabledNext }) {
                         onChange={(e) => setSummery(e.target.value)}
                     />
                     <div className='mt-2 flex justify-end'>
-                        <Button type="submit"
+                        <Button
                             disabled={loading}>
                             {loading ? <LoaderCircle className='animate-spin' /> : 'Save'}
                         </Button>
