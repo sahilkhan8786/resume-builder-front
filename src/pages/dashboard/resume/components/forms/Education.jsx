@@ -64,7 +64,7 @@ function Education() {
 
             <div>
                 {educationalList.map((item, index) => (
-                    <div className='mt-5'>
+                    <div className='mt-5' key={index}>
                         <div className='flex flex-col gap-2 '>
                             <div className='flex flex-col'>
                                 <label>University Name</label>

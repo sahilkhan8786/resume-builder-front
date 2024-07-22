@@ -2,7 +2,6 @@ import React from 'react'
 
 function ExperiencePreview({ resumeInfo }) {
 
-    console.log(resumeInfo.experience[0].workSummery)
     return (
         <div className='my-6'>
             <h2 className='text-center font-bold text-sm mb-2'

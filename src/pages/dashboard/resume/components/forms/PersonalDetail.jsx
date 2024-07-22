@@ -13,7 +13,6 @@ function PersonalDetail({ enabledNext }) {
     const [formData, setFormData] = useState();
     const [loading, setLoading] = useState(false);
     useEffect(() => {
-        console.log("---", resumeInfo)
     }, [])
 
     function handleInputChange(e) {
