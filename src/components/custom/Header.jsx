@@ -6,7 +6,7 @@ export default function Header() {
     return (
         <div className='p-3 px-5 flex justify-between items-center h-full shadow-md'>
             <Link to='/'>
-                <img src='/logo.svg' width={100} height={100} />
+                <img src='/logo.png' width={50} />
             </Link>
             <Link to={`/dashboard`}>
                 <Button>Get Started</Button>
